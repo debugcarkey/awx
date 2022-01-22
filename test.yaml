@@ -5,4 +5,4 @@
   tasks:
     - name: Hello Message
       become_user: admin
-      shell: "echo {{ stack_name }}"
+      shell: "sudo echo {{ stack_name }}"
