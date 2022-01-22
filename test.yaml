@@ -1,9 +1,14 @@
 - name: Hello World Sample
   hosts: all
   gather_facts: true
-  roles:
-     - { role: tommarshall.awscli }
+  # roles:
+  #    - { role: tommarshall.awscli }
   tasks:
     - name: Hello Message
       become_user: admin
       shell: "echo {{ stack_name }}"
+    - name: get the username running the deploy
+      local_action: command whoami
+      register: username_on_the_host
+
+    - debug: var=username_on_the_host
