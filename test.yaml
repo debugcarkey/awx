@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
-  # roles:
-  #    - { role: tommarshall.awscli }
+  roles:
+     - { role: tommarshall.awscli }
   tasks:
     - name: Hello Message
       become_user: admin
