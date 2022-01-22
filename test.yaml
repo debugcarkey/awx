@@ -3,12 +3,12 @@
   vars:
 
   tasks:
-- debug: var=inventory_hostname
-- debug: var=ansible_hostname
-  #- debug: var=hostvars
+    - debug: var=inventory_hostname
+    - debug: var=ansible_hostname
+      #- debug: var=hostvars
 
-- name: get the username running the deploy
-  local_action: command whoami
-  register: username_on_the_host
+    - name: get the username running the deploy
+      local_action: command whoami
+      register: username_on_the_host
 
-- debug: var=username_on_the_host
+    - debug: var=username_on_the_host
