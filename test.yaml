@@ -1,12 +1,6 @@
----
-- name: Fuse Search Test playbook.
+- name: Hello World Sample
   hosts: all
-  gather_facts: false
-  no_log: false
-  connection: local
-  collections:
-    - kubernetes.core
-  tasks: 
-      - name: Print Hello world
-        shell: "echo Hello world!"
-        
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
