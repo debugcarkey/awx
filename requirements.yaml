@@ -1,0 +1,5 @@
+---    
+- src: https://github.com/tommarshall/ansible-role-awscli.git
+  scm: git
+  version: master
+  name: ansible-role-awscli
