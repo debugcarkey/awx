@@ -1,8 +1,9 @@
 - name: Hello World Sample
   hosts: all
-  # roles:
-  #    - { role: tommarshall.awscli }
+  gather_facts: False
+  roles:
+     - { role: tommarshall.awscli }
   tasks:
     - name: Hello Message
       become_user: admin
-      shell: "sudo echo {{ stack_name }}"
+      shell: "echo {{ stack_name }}"
