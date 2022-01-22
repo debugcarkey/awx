@@ -1,5 +1,4 @@
----    
-- src: https://github.com/tommarshall/ansible-role-awscli.git
-  scm: git
-  version: master
-  name: tommarshall.awscli
+---
+  - name: geerlingguy.php_roles
+    version: 0.9.3
+    source: https://galaxy.ansible.com
