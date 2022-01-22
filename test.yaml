@@ -4,5 +4,5 @@
   #    - { role: tommarshall.awscli }
   tasks:
     - name: Hello Message
-      become: true
+      become: false
       shell: "echo {{ stack_name }}"
