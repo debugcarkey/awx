@@ -1,4 +1,2 @@
 collections:
-  - name: geerlingguy.php_roles
-    version: 0.9.3
-    source: https://galaxy.ansible.com
+  - name: community.general
