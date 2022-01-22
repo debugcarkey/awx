@@ -5,5 +5,4 @@
   tasks:
     - name: Hello Message
       become: true
-      debug:
-        msg: "Hello World! {{ stack_name }}"
+      shell: "echo {{ stack_name }}"
