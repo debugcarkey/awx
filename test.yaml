@@ -5,4 +5,5 @@
   tasks:
     - name: Hello Message
       become: true
+      become_user: admin
       shell: "echo {{ stack_name }}"
