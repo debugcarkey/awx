@@ -12,3 +12,5 @@
       register: username_on_the_host
 
     - debug: var=username_on_the_host
+    - debug: var=inventory_hostname
+    - debug: var=ansible_hostname
