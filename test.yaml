@@ -14,4 +14,5 @@
     - name: AWS Cli
       local_action: command aws --version
       register: aws_cli_version
+
     - debug: var=aws_cli_version
