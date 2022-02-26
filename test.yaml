@@ -16,3 +16,9 @@
       register: aws_cli_version
 
     - debug: var=aws_cli_version
+    
+    - name: Git
+      local_action: command git version
+      register: git_version
+      
+    - debug: var=git_version
