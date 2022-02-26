@@ -14,5 +14,10 @@
     - name: AWS Cli
       local_action: command aws --version
       register: aws_cli_version
-
     - debug: var=aws_cli_version
+    
+    - name: git
+      local_action command git version
+      register: git_version
+    - debug: var=git_version 
+    
