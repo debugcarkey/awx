@@ -10,5 +10,9 @@
     - name: get the username running the deploy
       local_action: command whoami
       register: username_on_the_host
+   
+    - name: AWS Cli
+      local_action: command aws --version
+      register: aws_cli_version
 
-    - debug: var=username_on_the_host
+    - debug: var=aws_cli_version
