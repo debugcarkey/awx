@@ -1,2 +1,2 @@
 # awx
-Asnible Web Automation Platform
+Ansible Web Automation Platform
